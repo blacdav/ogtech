@@ -3,6 +3,8 @@ body {
     font-family:'Times New Roman', Times, serif ;
     margin: 0 ;
     padding: 0 ;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 /* Global */
@@ -126,6 +128,18 @@ header .container nav ul .current a {
     width: 200px;
 }
 
+#section {
+    display: flex;
+}
+
+#section .container {
+    display: block;
+}
+
+#section .container li {
+    overflow: hidden;
+}
+
 /* flex */
 #boxes .box {
     padding: 20px;
@@ -137,23 +151,25 @@ footer {
     background-color: rgb(255, 30, 0);
 }
 
-footer .container p {
+footer div p {
     color: white;
+    text-align: right;
 }
 
-@media (max-width: 520px) {
+/* other screen sizes */
+@media (max-width: 480px) {
     body {
         background-color: darkgrey;
     }
 
     header {
-        font-size: x-small;
+        font-size: 6px;
         padding: 0;
         min-height: 0;
     }
 
     header nav {
-        padding-top: 25px;
+        padding-top: 15px;
         font-size: 6px;
     }
 
@@ -196,17 +212,25 @@ footer .container p {
     #about .container {
         display: block;
     }
+
+    #section {
+        display: block;
+    }
+    
+    #section .container li {
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 320px) {
     header {
-        font-size: xx-small;
+        font-size: 5px;
         padding-top: 0;
         min-height: 0;
     }
 
     header nav {
-        padding-top: 20px;
+        padding-top: 10px;
         font-size: 6px;
     }
 
