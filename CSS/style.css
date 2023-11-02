@@ -128,8 +128,15 @@ header .container nav ul .current a {
     width: 200px;
 }
 
+#boxes .box {
+    padding: 20px;
+    text-align: center;
+    width: auto;
+}
+
 #section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 #section .container {
@@ -138,22 +145,20 @@ header .container nav ul .current a {
 
 #section .container li {
     overflow: hidden;
+    background-color: #ffff;
+    padding:0 20px;
+    margin: 5px;
 }
 
-/* flex */
-#boxes .box {
-    padding: 20px;
+#section .dark {
+    height: 350px;
+}
+
+footer{
     text-align: center;
-    width: auto;
-}
-
-footer {
     background-color: rgb(255, 30, 0);
-}
-
-footer div p {
     color: white;
-    text-align: right;
+    padding: 10px;
 }
 
 /* other screen sizes */
