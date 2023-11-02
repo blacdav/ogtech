@@ -31,7 +31,7 @@ ul {
 }
 
 .dark {
-    background: rgb(71, 71, 71) ;
+    background: #0c0d0d ;
     color: white ;
     padding: 15px ;
     margin-bottom: 10px ;
@@ -40,7 +40,7 @@ ul {
 
 /* Header */
 header {
-    background: rgb(71, 71, 71) ;
+    background: #0c0d0d;
     color: white ;
     padding: 10px ;
     border-bottom: 3px solid rgb(255, 30, 0) ;
@@ -108,7 +108,7 @@ header .container nav ul .current a {
 
 /* newsletter */
 .newsletter {
-    background: rgb(71, 71, 71);
+    background: #0c0d0d;
     padding: 20px ;
     color: white ;
     min-height: 50px ;
